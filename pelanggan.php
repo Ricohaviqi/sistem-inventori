@@ -106,7 +106,7 @@ $i = 1;
 while ($pl = mysqli_fetch_array($getpelanggan)){
     $id_pelanggan = $pl['id_pelanggan'];
     $nama_pelanggan = $pl['nama_pelanggan'];
-    $no_tlp = $pl['no_tlp'];
+    $no_tlp = $pl['no_telp'];
     $alamat = $pl['alamat'];
 }
 ?>

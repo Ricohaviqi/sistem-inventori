@@ -3,6 +3,7 @@ require 'cek_login.php';
 $h1 = mysqli_query($koneksi, "SELECT * FROM produk");
 $h2 = mysqli_num_rows($h1);
 
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -74,7 +75,7 @@ $h2 = mysqli_num_rows($h1);
                     <div class="row">
                         <div class="col-xl-3 col-md-6">
                             <div class="card bg-primary text-white mb-4">
-                                <div class="card-body">Jumlah Barang :<?=$h2;?> </div>
+                                <div class="card-body">Jumlah Barang : <?= $h2;  ?> </div>
                             </div>
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#myModal">
@@ -148,13 +149,13 @@ $h2 = mysqli_num_rows($h1);
                                                     <!-- Modal body -->
                                                     <div class="modal-body">
                                                         <input type="text" name="nama_produk" class="form-control mt-3"
-                                                            placeholder="nama produk" value="<?= $nama_produk; ?>">
+                                                            placeholder="" value="<?= $nama_produk; ?>">
                                                         <input type="text" name="deskripsi" class="form-control mt-3"
                                                             placeholder="deskripsi produk" value="<?= $deskripsi;  ?>">
                                                         <input type="num" name="harga" class="form-control mt-3"
                                                             placeholder="harga" value="<?= $harga;  ?>">
                                                         <input type="num" name="stock" class="form-control mt-3"
-                                                            placeholder="stock" value="<?= $stock;  ?>">
+                                                            placeholder="harga" value="<?= $stock;  ?>">
                                                         <input type="hidden" name="id_produk" class="form-control mt-3"
                                                             value="<?= $id_produk;  ?>">
                                                     </div>
@@ -243,7 +244,7 @@ $h2 = mysqli_num_rows($h1);
             <form method="POST">
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <input type="text" name="nama_produk" class="form-control mt-3" placeholder="nama produk">
+                    <input type="text" name="nama_produk" class="form-control mt-3" placeholder="">
                     <input type="text" name="deskripsi" class="form-control mt-3" placeholder="deskripsi produk">
                     <input type="num" name="harga" class="form-control mt-3" placeholder="harga">
                     <input type="num" name="stock" class="form-control mt-3" placeholder="stock">

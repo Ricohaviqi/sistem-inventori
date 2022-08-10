@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$koneksi = mysqli_connect('localhost', 'root', '', 'inventory');
+$koneksi = mysqli_connect('localhost', 'root', '', 'inventori');
 
 if (isset($_POST['login'])) {
     //initial variable

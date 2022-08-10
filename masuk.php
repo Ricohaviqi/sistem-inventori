@@ -92,8 +92,8 @@ require 'cek_login.php';
                                    $id_masuk = $bm['id_masuk'];
                                    $nama_produk = $bm['nama_produk'];
                                    $deskripsi = $bm['deskripsi'];
-                                    $quantity=$bm['qty'];
-                                    $tgl_masuk=$bm['tgl_masuk'];
+                                    $quantity = $bm['qty'];
+                                    $tgl_masuk = $bm['tgl_masuk'];
                                 ?>
                                 
                                     <tr>
